@@ -1,7 +1,67 @@
 *,
-::after,
-::before {
+*::after,
+*::before {
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
+}
+
+:root {
+  /* Marca */
+  --snitap-sun: #ffcd1e;
+  --snitap-sky-mid: #06b6d4;
+  --snitap-sky-light: #67e8f9;
+  --snitap-joy-mid: #db2777;
+  --snitap-joy-light: #f472b6;
+  --snitap-leaf-mid: #16a34a;
+
+  /* Base */
+  --text: #000000;
+  --highlights: 000000;
+  --background: #fafafa;
+
+  /* Tipografia  */
+  --fw-bold: 700;
+  --fw-medium: 500;
+  --fw-regular: 400;
+
+  --fs-h1: 4rem;
+  --fs-h2: 2.5rem;
+  --fs-label: 1rem;
+  --fs-button: 1rem;
+  --fs-span: 0.875rem;
+
+  --flh-120: 1.2;
+  --flh-125: 1.25;
+  --flh-150: 1.5;
+
+  --ff-syne: "Syne", sans-serif;
+  --ff-monts: "Montserrat", sans-serif;
+  --ff-inter: "Inter", sans-serif;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--text);
+  font: var(--fw-medium) var(--fs-label) / var(--flh-150) var(--ff-monts);
+}
+
+h1 {
+  font: var(--fw-bold) var(--fs-h1) / var(--flh-125) var(--ff-syne);
+}
+
+h2 {
+  font: var(--fw-bold) var(--fs-h2) / var(--flh-120) var(--ff-syne);
+}
+
+button {
+  font: var(--fw-medium) var(--fs-button) / var(--flh-150) var(--ff-monts);
+}
+
+label {
+  font: var(--fw-medium) var(--fs-label) / var(--flh-150) var(--ff-monts);
+}
+
+a{
+  text-decoration: none;
 }
